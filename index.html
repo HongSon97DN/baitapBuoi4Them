@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Bài 1 -->
+    <div class="container">
+        <div class="w-75">
+            <form class="py-5">
+                <h2>Bài 1: Tính ngày tháng năm</h2>
+                <div class="form-group">
+                  <label for="ngay">Nhập ngày </label>
+                  <input type="number" class="form-control" id="ngay">
+                </div>
+                <div class="form-group">
+                  <label for="thang">Nhập tháng</label>
+                  <input type="number" class="form-control" id="thang">
+                </div>
+                <div class="form-group">
+                    <label for="nam">Nhập năm</label>
+                    <input type="number" class="form-control" id="nam">
+                </div>               
+                <button id="homQua" type="button" class="btn btn-primary mb-3">Ngày hôm qua</button>
+                <button id="ngayMai" type="button" class="btn btn-primary mb-3">Ngày mai</button>
+                <p class="alert alert-success py-3" id="txtResult"></p>
+              </form>
+        </div>        
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="container">
+        <div class="w-75">
+          <form class="py-5">
+            <h2>Bài 2: Tính ngày </h2>            
+            <div class="form-group">
+              <label for="month">Nhập tháng</label>
+              <input type="number" class="form-control" id="month">
+            </div>
+            <div class="form-group">
+                <label for="year">Nhập năm</label>
+                <input type="number" class="form-control" id="year">
+            </div>               
+            <button id="tinhNgay" type="button" class="btn btn-primary mb-3">Tính ngày</button>          
+            <p class="alert alert-success py-3" id="txtResult1"></p>
+          </form>
+        </div>
+    </div>
+
+    <!-- Bài 3 -->
+    <div class="container">
+      <div class="w-75">
+          <form class="py-5">
+              <h2>Bài 3: Đọc số</h2>
+              <div class="form-group">
+                <label for="so3ChuSo">Nhập 3 chữ số</label>
+                <input type="number" class="form-control" id="so3ChuSo">
+              </div>              
+              <button id="docSo" type="button" class="btn btn-primary mb-3">Đọc số</button>
+              <p class="alert alert-success py-3" id="txtResult2"></p>
+            </form>
+      </div>        
+    </div>
+
+    <!-- Bài 4 -->
+    <div class="container">
+      <div class="w-75">
+          <form class="py-5">
+              <h2>Bài 4: Tìm SV xa trường nhất</h2>
+              <label>Sinh viên 1</label>
+              <div class="form-group d-flex">
+                <input type="text" class="form-control mx-1" id="tenSV1" placeholder="Nhập tên SV">
+                <input type="number" class="form-control mx-1" id="x1" placeholder="Nhập tọa độ x">
+                <input type="number" class="form-control mx-1" id="y1" placeholder="Nhập tọa độ y">
+              </div>
+
+              <label>Sinh viên 2</label>
+              <div class="form-group d-flex">
+                <input type="text" class="form-control mx-1" id="tenSV2" placeholder="Nhập tên SV">
+                <input type="number" class="form-control mx-1" id="x2" placeholder="Nhập tọa độ x">
+                <input type="number" class="form-control mx-1" id="y2" placeholder="Nhập tọa độ y">
+              </div>
+
+              <label>Sinh viên 3</label>
+              <div class="form-group d-flex">
+                <input type="text" class="form-control mx-1" id="tenSV3" placeholder="Nhập tên SV">
+                <input type="number" class="form-control mx-1" id="x3" placeholder="Nhập tọa độ x">
+                <input type="number" class="form-control mx-1" id="y3" placeholder="Nhập tọa độ y">
+              </div>
+
+              <label>Trường học</label>
+              <div class="form-group d-flex">
+                <input type="number" class="form-control mx-1" id="x" placeholder="Nhập tọa độ x">
+                <input type="number" class="form-control mx-1" id="y" placeholder="Nhập tọa độ y">
+              </div>           
+              <button id="tim" type="button" class="btn btn-primary mb-3">Tìm</button>
+              <p class="alert alert-success py-3" id="txtResult3"></p>
+            </form>
+      </div>        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
